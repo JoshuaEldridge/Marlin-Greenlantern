@@ -374,9 +374,15 @@
 
   // ANET A8 Standard Extruder at 210 Degree Celsius and 100% Fan
   //(measured after M106 S255 with M303 E0 S210 C8)
-  #define  DEFAULT_Kp 21.0
-  #define  DEFAULT_Ki 1.25
-  #define  DEFAULT_Kd 86.0
+  //#define  DEFAULT_Kp 21.0
+  //#define  DEFAULT_Ki 1.25
+  //#define  DEFAULT_Kd 86.0
+  
+  // ANET AM8 Genuine E3D at 190 Degree Celsius and 0% Fan
+  // M303 E0 S190 C10
+  #define  DEFAULT_Kp 25.50
+  #define  DEFAULT_Ki 2.18
+  #define  DEFAULT_Kd 74.72
 
 #endif // PIDTEMP
 
@@ -408,9 +414,11 @@
 
   //120V 250W silicone heater into 4mm borosilicate (MendelMax 1.5+)
   //from FOPDT model - kp=.39 Tp=405 Tdead=66, Tc set to 79.2, aggressive factor of .15 (vs .1, 1, 10)
-  #define  DEFAULT_bedKp 10.00
-  #define  DEFAULT_bedKi .023
-  #define  DEFAULT_bedKd 305.4
+  //#define  DEFAULT_bedKp 10.00
+  //#define  DEFAULT_bedKi .023
+  //#define  DEFAULT_bedKd 305.4
+
+  // M303 E-1 C10 S60
 
   //120V 250W silicone heater into 4mm borosilicate (MendelMax 1.5+)
   //from pidautotune
