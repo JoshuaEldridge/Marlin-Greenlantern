@@ -547,7 +547,7 @@
  *                                      X, Y, Z, E0 [, E1[, E2[, E3[, E4]]]]
  */
  // JE: Updated for Titan geared extruder
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 100, 100, 400, 350 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 100, 100, 400, 688 }
 
 /**
  * Default Max Feed Rate (mm/s)
@@ -585,8 +585,8 @@
  * When changing speed and direction, if the difference is less than the
  * value set here, it may happen instantaneously.
  */
-#define DEFAULT_XJERK                 20.0
-#define DEFAULT_YJERK                 20.0
+#define DEFAULT_XJERK                 15.0
+#define DEFAULT_YJERK                 15.0
 #define DEFAULT_ZJERK                  0.3
 #define DEFAULT_EJERK                  5.0
 
@@ -779,7 +779,7 @@
 
 // For direct drive extruder v9 set to true, for geared extruder set to false.
 // JE: Updated for Titan geared extruder
-#define INVERT_E0_DIR true
+#define INVERT_E0_DIR false
 #define INVERT_E1_DIR false
 #define INVERT_E2_DIR false
 #define INVERT_E3_DIR false
